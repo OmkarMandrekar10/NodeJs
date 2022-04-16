@@ -1,0 +1,76 @@
+<DOCTYPE html>
+    <html>
+    <head>
+        <title>
+            Html CRUD with Pure JavaScript
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <br><lable>Product Id</lable><label class="validation-error hide" id="ProductIdValidationError">
+                            <input type="text" name="ProductId" id="ProductId"><br>
+                        </div>
+                        <div>
+                            <br><lable>Product Name</lable>
+                            <input type="text" name="ProductName" id="ProductName"><br>
+                        </div>
+                        <div>
+                            <br><lable>Category Id</lable>
+                            <input type="text" name="CategoryId" id="CategoryId"><br>
+                        </div>
+                        <div>
+                            <br><lable>Category Name</lable>
+                            <input type="text" name="CategoryName" id="CategoryName"><br>
+                        </div>
+                        <div>
+                            <br><lable>Category</lable>
+                            <input type="text" name="Category" id="Category"><br>
+                        </div>
+                        <div>
+                            <br><lable>Relationships</lable>
+                            <input type="text" name="Relationships" id="Relationships"><br>
+                        </div>
+                        <div>
+                            <br><lable>ProductSchema</lable>
+                            <input type="text" name="ProductSchema" id="ProductSchema"><br>
+                        </div>
+                        <div>
+                            <br><lable>Pagination</lable>
+                            <input type="text" name="Pagination" id="Pagination"></div><br>
+                        </div>
+                        <div class="form-action-buttons">
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="pro">
+                        <thead>
+                            <tr>
+
+                                <th>Product Id</th>
+                                <th>Product Name</th>
+                                <th>Category Id</th>
+                                <th>Category Name</th>
+                                <th>Category</th>
+                                <th>ProductSchema</th>
+                                <th>Pagination</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script src="script.js"></script>
+    </body>
+
+    </html>
